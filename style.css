@@ -12,7 +12,7 @@ button, summary {
 :root {
     /* --11lcxa5: #2d2d2d; */
 
-     --black-background: #2d2d2d;
+    --black-background: #2d2d2d;
     --white-background: #ffffff;
 }
 
@@ -27,6 +27,7 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 
+
 }
 
 header h1 img {
@@ -37,6 +38,7 @@ header h1 img {
 /* Svg iconen voor je nav */
 svg {
     width: 2em;
+    
 }
 /* de lijnen van de svg worden opgevuld met wit kleur */
 path {
@@ -115,14 +117,63 @@ nav:nth-of-type(1).toonMenu ul {
 }
 
 nav:nth-of-type(1) ul li {
-
+    list-style: none;
 }
+
+nav:nth-of-type(1) ul li:nth-of-type(1)::before {
+    content: "STARTPAGINA";
+    position: absolute;
+    top: 11%;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(2)::before {
+    content: "-20% OP DE BESTE CADEAU MET CODE PRESENTS";
+    position: absolute;
+    top: 26%;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(3)::before {
+    content: "NIEUW";
+    position: absolute;
+    top: 50%;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(3)::before {
+    content: "NIEUW";
+    position: absolute;
+    top: 50%;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(4)::before {
+    content: "KLEDING";
+    position: absolute;
+    top: 70%;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(5)::before {
+    content: "CADEAUS";
+    position: absolute;
+    top: 90%;
+}
+/* nav:nth-of-type(1) ul li:nth-of-type(3)::before { 
+    content: "guys hello";
+    position: relative;
+    top: 30px;
+}
+*/
 
 nav:nth-of-type(1) ul li a {
     padding: 1em;
 }
 
-section:nth-of-type(1) {
+section:nth-of-type(1) {  
+    background-color:#FF385C;
+    font-size: 29px;
+    line-height: 50px;
+
+}
+    
+/* section:nth-of-type(1) {  
     margin: 0%;
     background-image: url('images/blackfridayeerstefoto.png');
     background-repeat: no-repeat;
@@ -130,6 +181,8 @@ section:nth-of-type(1) {
     
     height: 30em;
 }
+*/
+
 
 
 
